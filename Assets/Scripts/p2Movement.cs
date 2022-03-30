@@ -13,6 +13,13 @@ public class p2Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Translate(-6f * Time.deltaTime, 0, 0);
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Translate(6f * Time.deltaTime, 0, 0);
+        }
     }
 }
