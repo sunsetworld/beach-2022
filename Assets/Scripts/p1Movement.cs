@@ -17,11 +17,11 @@ public class p1Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-6f * Time.deltaTime, 0, 0);
+            transform.Translate(-9f * Time.deltaTime, 0, 0);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(6f * Time.deltaTime, 0, 0);
+            transform.Translate(9f * Time.deltaTime, 0, 0);
         }
     }
 }

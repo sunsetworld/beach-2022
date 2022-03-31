@@ -15,11 +15,11 @@ public class p2Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-6f * Time.deltaTime, 0, 0);
+            transform.Translate(-9f * Time.deltaTime, 0, 0);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(6f * Time.deltaTime, 0, 0);
+            transform.Translate(9f * Time.deltaTime, 0, 0);
         }
     }
 }
