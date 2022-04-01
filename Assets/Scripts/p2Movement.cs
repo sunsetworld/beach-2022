@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class p2Movement : MonoBehaviour
 {
+    Vector2 movement = new Vector2(10, 0);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +17,11 @@ public class p2Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-9f * Time.deltaTime, 0, 0);
+            transform.Translate(-movement.x * Time.deltaTime, 0, 0);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(9f * Time.deltaTime, 0, 0);
+            transform.Translate(movement.x * Time.deltaTime, 0, 0);
         }
     }
 }

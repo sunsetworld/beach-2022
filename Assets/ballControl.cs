@@ -6,6 +6,8 @@ public class ballControl : MonoBehaviour
 {
     CircleCollider2D cc2d;
     [SerializeField] Rigidbody2D rb2d;
+    [SerializeField] Vector2 ballForce1;
+    [SerializeField] Vector2 ballForce2;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,13 @@ public class ballControl : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Vector2 randomNum = new Vector2(-4, 2);
-        rb2d.AddForce(randomNum);
+        if (transform.position.x > 0)
+        {
+            rb2d.AddForce(ballForce2);
+        }
+        else if (transform.position.x < 0)
+        {
+            rb2d.AddForce(ballForce1);
+        }
     }
 }

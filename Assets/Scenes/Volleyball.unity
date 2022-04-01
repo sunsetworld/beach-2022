@@ -203,7 +203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83989349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.66, y: 1.3, z: 0}
+  m_LocalPosition: {x: -6.66, y: 2.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -260,6 +260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 83989353}
+  ballForce1: {x: -2.5, y: 2.3}
+  ballForce2: {x: 2.5, y: 2.3}
 --- !u!1 &334797489
 GameObject:
   m_ObjectHideFlags: 0
